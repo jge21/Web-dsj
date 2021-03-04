@@ -17,7 +17,8 @@ $(function() {
     $.ajax({
       method: 'GET',
       url: '/my/userinfo',
-      success: function(res) {
+      success: function (res) {
+        console.log(res);
         if (res.status !== 0) {
           return layer.msg('获取用户信息失败！')
         }
